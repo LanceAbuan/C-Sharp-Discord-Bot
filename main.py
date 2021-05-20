@@ -1,4 +1,3 @@
-#FwEln0ZYPFL7E9gW5Y9Lx7PdHgBI-GqJ
 import discord
 from discord.ext import commands
 import youtube_dl
@@ -188,4 +187,4 @@ async def kiss(ctx, user: discord.User):
 
 
 keep_alive()
-client.run("ODQ0NzI3ODYzODM1MDk5MTM2.YKWoIQ.iCwZnXFuEkQw542C0FQL5lDoATs")
+client.run("FAKE TOKEN")
