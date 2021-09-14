@@ -21,6 +21,11 @@ async def help_me(ctx):
 '''
 
 
+@client.event
+async def on_ready():
+    await client.change_presence(activity=discord.Game(name=">help"))
+    print("I'm ready!")
+
 @client.group(invoke_without_command = True)
 async def help(ctx):
   em = discord.Embed(title = "Help", description = "Use >help <command> for extended info\nRemember, this is freshly in development so don't be too rough. If you come across an error, message my creator <@184833237535686658>.",color = Color.random())
@@ -194,6 +199,4 @@ async def kiss(ctx, user:discord.Member = None ):
     return
 
 keep_alive()
-client.run("FAKE TOKEN")
-
-client.change_presence(activity=discord.Game(name=">help"))
+client.run("ODQ0NzI3ODYzODM1MDk5MTM2.YKWoIQ.IhEAxPWv9m77QBA-rzXy4jK6ZGo")
