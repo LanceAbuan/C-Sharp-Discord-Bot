@@ -11,14 +11,6 @@ import re
 
 client = commands.Bot(command_prefix=">")
 client.remove_command("help")
-'''
-@client.command()
-async def help_me(ctx):
-  await ctx.send("Hello! I'm the IHOP radio bot created by the genius himself, Jodie!\nKeep in mind there's probably a humongous amount of errors, this hasn't been tested at all. The prefix is '>'")
-  await ctx.send("Remember, this is freshly in development so don't be too rough. If you come across an error, message my creator <@184833237535686658>.")
-  await ctx.send("The commands are:\n-----**play**\n-----**leave**\n-----**pause**\n-----**resume**\n-----**clear**")
-  await ctx.send("The way to play a song is to join a voice channel, and you put a YouTube link.\nFor example: >play https://www.youtube.com/watch?v=BSNDJ3U5DyY\nMy creator hasn't looked into making a search engine so you can use just the name of the video yet, what a dummy.")
-'''
 
 
 @client.event
