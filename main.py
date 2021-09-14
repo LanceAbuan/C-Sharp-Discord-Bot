@@ -165,7 +165,7 @@ async def pause(ctx):
   if voice != None and voice.is_playing():
     await voice.pause()
   else:
-    await ctx.send("I'm not talking right now! Please chill tf out.")
+    await ctx.send("There is already no audio.")
 
 @client.command(help = "Resumes the audio.")
 async def resume(ctx):
@@ -173,7 +173,7 @@ async def resume(ctx):
   if voice != None and voice.is_paused():
     await voice.resume()
   else:
-    await ctx.send("Don't interrupt me while I'm playing, baka~.")
+    await ctx.send("I am already playing.")
 
 @client.command(help = "Clears the bot of the song its playing.")
 async def stop(ctx):
