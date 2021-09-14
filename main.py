@@ -7,6 +7,8 @@ from discord import Color
 import urllib.request
 import re
 
+
+
 client = commands.Bot(command_prefix=">")
 client.remove_command("help")
 '''
@@ -17,6 +19,7 @@ async def help_me(ctx):
   await ctx.send("The commands are:\n-----**play**\n-----**leave**\n-----**pause**\n-----**resume**\n-----**clear**")
   await ctx.send("The way to play a song is to join a voice channel, and you put a YouTube link.\nFor example: >play https://www.youtube.com/watch?v=BSNDJ3U5DyY\nMy creator hasn't looked into making a search engine so you can use just the name of the video yet, what a dummy.")
 '''
+
 
 @client.group(invoke_without_command = True)
 async def help(ctx):
@@ -182,9 +185,15 @@ async def stop(ctx):
     voice.stop()
 
 @client.command(help = "Sends a kiss to someone you mention")
-async def kiss(ctx, user: discord.User):
-  await user.send(ctx.message.author.name + " has sent you a kiss!")
-
+async def kiss(ctx, user:discord.Member = None ):
+  try:
+    await user.send(ctx.message.author.name + " has sent you a kiss!")
+    await ctx.send("The kiss has been sent successfully!")
+  except discord.ext.commands.errors.MemberNotFound as e:
+    await ctx.send(e)
+    return
 
 keep_alive()
 client.run("FAKE TOKEN")
+
+client.change_presence(activity=discord.Game(name=">help"))
