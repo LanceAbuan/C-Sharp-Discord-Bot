@@ -1,3 +1,4 @@
-# SuperAmazingIHOPBot
-Discord bot for me and my friends. Plays music and am planning on adding more functions. Cannot queue songs, but runs rapidly.
-Feel free to ask me for a link to invite it, speed was the goal for this. Feel free to message me for suggestions on what to add, I am always open.
+# C-Sharp
+Discord bot originally meant for a handful of servers, but increasing features and how many servers it can support is on the road map.
+>help is the main command that will populate an embedded message visually presenting how to use the bot.
+I'm open to suggestions, and message my business email if you wish to join this project or simply have a suggestion.
