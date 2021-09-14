@@ -199,4 +199,4 @@ async def kiss(ctx, user:discord.Member = None ):
     return
 
 keep_alive()
-client.run("ODQ0NzI3ODYzODM1MDk5MTM2.YKWoIQ.IhEAxPWv9m77QBA-rzXy4jK6ZGo")
+client.run("FAKE TOKEN")
